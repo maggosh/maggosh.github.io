@@ -1,0 +1,193 @@
+﻿/** tablet.css **/
+body
+{
+    background: url("../images/background-light.png");
+    background-color:#57FF4C;
+    padding-left:2.5%;
+    padding-right:2.5%;
+    font-family:Arial;
+}
+/** master **/
+#wrapper
+{
+    text-align: center;
+    clear:both;
+}
+header
+{
+    text-align: center;
+    margin-top:5px;
+    margin-bottom:5%;
+}
+#logo
+{
+    width:500px;
+    height:auto;
+    margin-left:auto;
+    margin-right:auto;
+}
+#navigation
+{
+    width:90%;
+    margin-top:10px;
+    margin-left:auto;
+    margin-right:auto;
+}
+.navLink
+{
+    height:27px;
+    width:auto;
+    padding-right:10px;
+    display:inline-block;
+}
+.navText
+{
+    display:none;
+}
+/** index.html **/
+#frontimage
+{
+    height:250px;
+    width:auto;
+    text-align: center;
+    margin-left:auto;
+    margin-right:auto;
+    box-shadow:none;
+}
+#intro
+{
+    width:90%;
+    margin-right:auto;
+    margin-left:auto;
+    margin-top:5%;
+    text-align:center;
+    font-size:1.7em;
+    text-shadow:2px 2px 5px #2B7F26;
+    clear:none;
+    float:none;
+}
+/** about.html **/
+#college
+{
+    font-size:1.1em;
+}
+.aboutdiv
+{
+    text-align:left;
+    padding-bottom:25px;
+}
+.aboutheader
+{
+    font-size:1.25em;
+    display:block;
+    text-align:left;
+    padding-left:40px;
+    text-shadow:2px 2px 5px #2B7F26;
+}
+.content
+{
+    text-align:left;
+    padding-left:5%;
+    padding-top:5px;
+}
+.skillset
+{
+    margin-top:10px;
+}
+.skilltype
+{
+    font-size:1.1em;
+    text-shadow:2px 2px 10px #2B7F26;
+}
+.jobdate
+{
+    font-size:0.75em;
+    font-style:italic;
+}
+/** projects.html **/
+#projects
+{
+    text-align:center;
+}
+.projecttitle
+{
+    background-color:transparent;
+    font-size:1.5em;
+    font-weight:bold;
+    color:black;
+    padding:5px;
+    text-shadow:none;
+    box-shadow:none;
+}
+.projecttitle a:link, .projecttitle a:visited{
+    color:black;
+    text-decoration:none;
+}
+.projectdesc
+{
+    float:none;
+    clear:none;
+    text-align:center;
+    width:100%;
+    margin-top:2%;
+}
+.projectimage
+{
+    width:75%;
+    height:auto;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:2%;
+    box-shadow:5px 5px 5px #2B7F26;
+    border-radius:0;
+}
+.projectblock
+{
+    margin-bottom:5%;
+}
+.groupheader
+{
+    font-size:1.2em;
+}
+/** contact.html **/
+#contactform
+{
+    width:70%;
+    display:block;
+    float:none;
+    padding-left:0;
+    margin-left:auto;
+    margin-right:auto;
+}
+#contactinfo
+{
+    width:40%;
+    margin-left:auto;
+    margin-right:auto;
+    float:none;
+    text-align:left;
+    margin-top:5%;
+    font-size:1.1em;
+}
+#contact
+{
+    display:inline;
+}
+#submitButton
+{
+    color:white;
+    height:40px;
+    background-color:#2B7F26;
+    /**background-color:#848484;**/
+    border:none;
+    border-radius:5px;
+    text-transform:none;
+}
+.text
+{
+    width:100%;
+    margin-bottom:2%;
+    border-radius:2px;
+    border:none;
+    box-shadow:none;
+}

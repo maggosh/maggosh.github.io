@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head lang="en">
+    <title>Robert Wallischek - Contact</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="description" content="I'm Robert Wallischek. I'm a digital freelancer working out of Brampton, Ontario; 
+        I specialize in web design and software development, with some video production and game design on the side, 
+        and I have a passion for all things digital." />
+    <meta name="keywords" content="web design, software development, portfolio site, brampton ontario, toronto freelance web,
+    brampton freelance, gta freelance, toronto freelance, video game design, freelance web developer" />
+    <script type="text/javascript" src="jquery-1.11.0.js"></script>
+    <link href="css/desktop.css" rel="Stylesheet" media="screen" />
+    <link href="css/tablet.css" rel="stylesheet" media="screen and (min-width: 481px) and (max-width: 768px)" />
+    <link href="css/mobile.css" rel="stylesheet" media="screen and (min-width: 0px) and (max-width: 480px)" />
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" id="logo" alt="Logo" />
+        <nav id="navigation">
+            <a href="index.html"><img src="images/home.png" class="navLink" alt="HOME" /><span class="navText">HOME</span></a>
+            <a href="about.html"><img src="images/about.png" class="navLink" alt="ABOUT" /><span class="navText">ABOUT</span></a>
+            <a href="projects.html"><img src="images/projects.png" class="navLink" alt="PROJECTS" /><span class="navText">PROJECTS</span></a>
+            <a href="contact.html"><img src="images/contact.png" class="navLink" alt="CONTACT"/><span class="navText">CONTACT</span></a>
+        </nav>
+    </header>
+    <div id="wrapper">
+        <div id="contactform">
+            <form id="form1" method="post" action="sendmail.php">
+                <input type="text" name="name" class="text" id="YourName" placeholder="Name" /><br />
+                <input type="text" name="email" class="text" id="YourEmail" placeholder="Email address" /><br />
+                <input type="text" name="subject" class="text" id="Subject" placeholder="Subject" /><br />
+                <textarea type="text" name="message" class="text" id="Message" placeholder="Message" Rows="6" cols="30" ></textarea><br />
+                <input type="submit" name="submit" id="submitButton" value="Send"/>
+            </form>
+        </div>
+        <div id="contactinfo">
+            <span id="contacthead">Contact information</span><br />
+            <div id="infodiv">
+                <span class="info"><span class="infohead">Phone</span> 647 381 7848</span><br />
+                <span class="info"><span class="infohead">Email</span> walliscr@sheridanc.on.ca</span><br />
+                <span class="info"><span class="infohead"><a href="http://www.linkedin.com/pub/robert-wallischek/74/a77/86b">LinkedIn</a></span></span><br />
+            </div> 
+        </div>
+    </div>
+</body>
+</html>

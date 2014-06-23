@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head lang="en">
+    <title>Robert Wallischek - Portfolio</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="description" content="I'm Robert Wallischek. I'm a digital freelancer working out of Brampton, Ontario; 
+        I specialize in web design and software development, with some video production and game design on the side, 
+        and I have a passion for all things digital." />
+    <meta name="keywords" content="web design, software development, portfolio site, brampton ontario, toronto freelance web,
+    brampton freelance, gta freelance, toronto freelance, video game design, freelance web developer" />
+    <script type="text/javascript" src="jquery-1.11.0.js"></script>
+    <link href="css/desktop.css" rel="Stylesheet" media="screen" />
+    <link href="css/tablet.css" rel="stylesheet" media="screen and (min-width: 481px) and (max-width: 768px)" />
+    <link href="css/mobile.css" rel="stylesheet" media="screen and (min-width: 0px) and (max-width: 480px)" />
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $.ajax({
+                type: "GET",
+                url: "Portfolio.xml",
+                dataType: "xml",
+                success: handleResponse
+            })
+        });
+        var request;
+        function handleResponse(jqxml) {
+            $(jqxml).find("group").each(function () {
+                $("#projects").append("<div class='group'><span class='groupheader'>" + $(this).attr("name") + "</span>");
+                $(this).find("project").each(function () {
+                    $("#projects").append("<div class='projectblock'><span class='projecttitle'><a href='" + $(this).find("name").attr("url") + "'>"
+                    + $(this).find("name").text() + "</a></span><br /><img src='images/" 
+                    + $(this).find("image").text() + "' alt='" + $(this).find("name").text() + "' class='projectimage'/><div class='projectdesc'>"
+                    + $(this).find("description").text() + "<br /><span class='skillslead'>Skills used: </span>"
+                    + $(this).find("skills").text() + "</div></div>");
+                });
+                $("#projects").append("</div>");
+            });
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" id="logo" alt="Logo" />
+        <nav id="navigation">
+            <a href="index.html"><img src="images/home.png" class="navLink" alt="HOME" /><span class="navText">HOME</span></a>
+            <a href="about.html"><img src="images/about.png" class="navLink" alt="ABOUT" /><span class="navText">ABOUT</span></a>
+            <a href="projects.html"><img src="images/projects.png" class="navLink" alt="PROJECTS" /><span class="navText">PROJECTS</span></a>
+            <a href="contact.html"><img src="images/contact.png" class="navLink" alt="CONTACT" /><span class="navText">CONTACT</span></a>
+        </nav>
+    </header>
+    <div id="wrapper">
+        <div id="projects">
+        
+        </div>
+    </div>
+</body>
+</html>

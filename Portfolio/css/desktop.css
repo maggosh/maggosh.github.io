@@ -1,0 +1,234 @@
+﻿/** desktop.css **/
+html, body
+{
+    height:100%;
+}
+body
+{
+    background: url("../images/background-light.png");
+    background-color:#57FF4C;
+    padding-left:10%;
+    padding-right:10%;
+    font-family:Arial;
+}
+ul
+{
+    margin-top:0;
+}
+a:link, a:visited
+{
+    color:#2B7F26;    
+}
+/** master **/
+header
+{
+    text-align: center;
+    margin-top:5px;
+    margin-bottom:5%;
+}
+#wrapper
+{
+    text-align:left;
+    clear:both;
+}
+#logo
+{
+    width:585px;
+    height:auto;
+    margin-left:auto;
+    margin-right:auto;
+}
+#navigation
+{
+    width:50%;
+    margin-top:10px;
+    margin-left:auto;
+    margin-right:auto;
+}
+.navLink
+{
+    height:30px;
+    width:auto;
+    margin-right:10px;
+    display:inline-block;
+}
+.navLink:hover
+{
+    background-color:rgba(5, 87, 0, 0.5);
+    border-radius:10px;
+    box-shadow:0 0 10px #055700;
+}
+.navText
+{
+    display:none;
+}
+
+/** index.html **/
+#frontimage
+{
+    height:300px;
+    width:auto;
+    text-align: left;
+    box-shadow:5px 5px 5px #2B7F26;
+}
+#intro
+{
+    width:40%;
+    float:right;
+    margin-right:10px;
+    margin-top:2%;
+    text-align:justify;
+    font-size:1.7em;
+    text-shadow:2px 2px 5px #2B7F26;
+    clear:both;
+    display:inline;
+}
+/** about.html **/
+#college
+{
+    font-size:1.1em;
+}
+.aboutdiv
+{
+    text-align:left;
+    padding-bottom:25px;
+}
+.aboutheader
+{
+    font-size:1.25em;
+    display:block;
+    text-align:left;
+    padding-left:40px;
+    text-shadow:2px 2px 5px #2B7F26;
+}
+.content
+{
+    text-align:left;
+    padding-left:5%;
+    padding-top:5px;
+}
+.skillset
+{
+    margin-top:10px;
+}
+.skilltype
+{
+    font-size:1.1em;
+    text-shadow:2px 2px 10px #2B7F26;
+}
+.jobdate
+{
+    font-size:0.75em;
+    font-style:italic;
+}
+/** projects.html **/
+#projects
+{
+    text-align:left;
+}
+.projecttitle
+{
+    background-color:#055700;
+    font-size:1.25em;
+    font-weight:bold;
+    color:#D0F5A9;
+    padding:5px;
+    text-shadow:2px 2px 5px black;
+    box-shadow:3px 3px 5px #2B7F26;
+    border-radius:3px;
+    
+}
+.projecttitle a:link, .projecttitle a:visited{
+    color:#D0F5A9;
+}
+.projectdesc
+{
+    float:right;
+    clear:both;
+    text-align:left;
+    width:60%;
+    margin-top:2%;
+}
+.projectimage
+{
+    width:35%;
+    height:auto;
+    margin-top:2%;
+    box-shadow:5px 5px 5px #2B7F26;
+    border-radius:10px;
+}
+.projectblock
+{
+    margin-bottom:3%;
+    margin-top:2%;
+}
+.groupheader
+{
+    font-size:1.5em;
+    font-style:italic;
+}
+.skillslead
+{
+    font-weight: bold;
+}
+
+/** contact.html**/
+#contactform
+{
+    width:40%;
+    text-align: center;
+    padding-left:10%;
+    float:left;
+    display:inline-block;
+}
+#contactinfo
+{
+    width:30%;
+    float:right;
+    text-align:center;
+    margin-top:5%;
+    background-color:rgba(5, 87, 0, 0.5);
+    border-radius:2px;
+    box-shadow:0 0 5px #055700;
+}
+#contact
+{
+    display:inline;
+}
+#submitButton
+{
+    color:white;
+    height:40px;
+    background-color:#2B7F26;
+    /**background-color:#848484;**/
+    border:none;
+    border-radius:5px;
+    text-transform:none;
+}
+#contacthead
+{
+    text-align:center;
+    font-size:1.1em;
+}
+#infodiv
+{
+    text-align:left;
+    margin-top:5px;
+}
+.text
+{
+    width:100%;
+    margin-bottom:2%;
+    border-radius:5px;
+    border:none;
+    box-shadow:5px 5px 5px #2B7F26;
+}
+.infohead
+{
+    color:#D0F5A9;
+    font-weight:bold;
+}
+.infohead a:link, .infohead a:visited
+{
+    color: #D0F5A9;
+}

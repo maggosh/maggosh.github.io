@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<portfolio>
+  <group name="Software development">
+    <project>
+      <name url="https://www.dropbox.com/s/mpcjmqnzzylhdmm/Maximum%20Darts%20Official%20Scoreboard.exe">Maximum Darts scoreboard</name>
+      <image>portfolio-scoreboard.png</image>
+      <description>
+        I programmed this scoreboard for the 2013 World Cup of Darts, using my knowledge of C#.NET. It can currently support Canadian national and international events.
+        I also implemented the ability to change past scores, and a feature that records the match's data into a .txt file for later reference.
+      </description>
+      <skills>
+        Visual Studio 2010, C#.NET, Photoshop
+      </skills>
+    </project>
+  </group>
+  <group name="Video production">
+    <project>
+      <name url="#">Work at the WDF World Cup</name>
+      <image>portfolio-worldcup.png</image>
+      <description>
+        I was contracted in August 2013 to do work for the 2013 WDF World Cup of Darts. On location in St. John's, Newfoundland and Labrador, I was in charge of monitoring the event's livestream,
+        operating the cameras and inputing player and match information and scores into the scoreboard.
+      </description>
+      <skills>
+        Adobe Premiere Pro, Adobe After Effects, XSplit Broadcaster, Livestream
+      </skills>
+    </project>
+    <project>
+      <name url="https://www.dropbox.com/s/lta5zbxildf4ap2/World%20Cup%20of%20Darts%20teaser.mp4">World Cup of Darts teaser</name>
+      <image>portfolio-wdfteaser.png</image>
+      <description>
+        A teaser trailer made to lead up to the 2013 World Cup of Darts. Used a combination of After Effects, stock footage and video capture.
+      </description>
+      <skills>
+        Adobe Premiere Pro, Adobe After Effects, Photoshop
+      </skills>
+    </project>
+    <project>
+      <name url="https://www.dropbox.com/sh/6l4bidp1bd6132m/xMh2QAr4m3">Advertiser video brochures</name>
+      <image>portfolio-brochures.png</image>
+      <description>
+        A series of advertisement "video brochures" created from After Effects templates for sponsors during the 2013 World Cup of Darts.
+      </description>
+      <skills>
+        Adobe Premiere Pro, Adobe After Effects
+      </skills>
+    </project>
+    <project>
+      <name url="https://www.dropbox.com/s/0m4h4aas37srpwb/Villainy%20watch%20ad.mp4">Villainy watches ad</name>
+      <image>portfolio-villainy.png</image>
+      <description>
+        A video advertisement I made for the Villainy brand of watches, using part of an After Effects template.
+      </description>
+      <skills>
+        Adobe Premiere Pro, Adobe After Effects
+      </skills>
+    </project>
+  </group>
+  <group name="Video game development">
+    <project>
+      <name url="https://www.dropbox.com/s/mzyeezivb9qawis/Candy%20Cram%20%28Windows%29.zip">Candy Cram</name>
+      <image>portfolio-candycram.png</image>
+      <description>
+        A game I programmed in one week for the 2014 Candy Jam game jam. It is currently being ported using Unity for a wider release.
+        Since its initial release, it has been downloaded over 300 times.
+      </description>
+      <skills>
+        Visual Studio 2010, XNA Game Studio 4.0, C#
+      </skills>
+    </project>
+  </group>
+</portfolio>

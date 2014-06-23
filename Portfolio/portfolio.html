@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Robert Wallischek's Portfolio Site</title>
+    <script type="text/javascript" src="jquery-1.11.0.js"></script>
+    <link href="css/desktop.css" rel="Stylesheet" media="screen" />
+    <link href="css/tablet.css" rel="stylesheet" media="screen and (min-width: 481px) and (max-width: 768px)" />
+    <!--<link href="css/mobile.css" rel="stylesheet" media="screen and (min-width: 0px) and (max-width: 480px)" />-->
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $.ajax({
+                type: "GET",
+                url: "Portfolio.xml",
+                dataType: "xml",
+                success: handleResponse
+            })
+        });
+        var request;
+        function handleResponse(jqxml) {
+            $(jqxml).find("project").each(function () {
+                $("#projects").append("<div class='projectblock'><span class='projecttitle'>"
+                + $(this).find("name").text() + "</span><br /><img src='images/" 
+                + $(this).find("image").text() + "' class='projectimage'/><div class='projectdesc'>"
+                + $(this).find("description").text() + "</div></div>");
+            });
+        }
+    </script>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="header">
+        <img src="images/logo.png" id="logo" />
+        <nav id="navigation">
+            <a href="index.html"><img src="images/home.png" class="navLink" /><span class="navText">HOME</span></a>
+            <a href="about.html"><img src="images/about.png" class="navLink" /><span class="navText">ABOUT</span></a>
+            <a href="projects.html"><img src="images/projects.png" class="navLink" /><span class="navText">PROJECTS</span></a>
+            <a href="contact.html"><img src="images/contact.png" class="navLink" /><span class="navText">CONTACT</span></a>
+        </nav>
+    </div>
+    <div id="wrapper">
+        <div id="projects">
+        
+        </div>
+    </div>
+    </form>
+</body>
+</html>
