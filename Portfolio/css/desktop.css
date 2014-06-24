@@ -70,6 +70,7 @@ header
     width:auto;
     text-align: left;
     box-shadow:5px 5px 5px #2B7F26;
+    position:relative;
 }
 #intro
 {
