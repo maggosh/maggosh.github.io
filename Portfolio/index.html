@@ -13,7 +13,13 @@
     <link href="css/tablet.css" rel="stylesheet" media="screen and (min-width: 481px) and (max-width: 768px)" />
     <link href="css/mobile.css" rel="stylesheet" media="screen and (min-width: 0px) and (max-width: 480px)" />
     <script type="text/javascript" src="jquery-1.11.0.js"></script>
-    <script type="text/javascript" src="http://maggosh.github.io/Portfolio/test.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("#frontimage").on("click",function() {
+                $(this).animate({top:'-100px'}, {queue:false, duration:500});
+            });
+        });
+    </script>
 </head>
 <body>
     <header>
